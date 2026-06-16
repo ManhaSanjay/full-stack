@@ -1,0 +1,221 @@
+/*this is the css file!! */
+body {
+	background-color: #232830; 
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	font-size: 24px;
+	color: #FFFFFF;
+	display: flex;
+	justify-content: space-between;
+}
+
+.site-name {
+	text-align: left;
+	margin: 30px; /*remove default h1 margin*/
+}
+
+.top-toolbar {
+	justify-content: flex-end;
+	display: flex;
+	gap: 30px;
+}
+
+.top-toolbar a {
+	font-size: 24px;
+	color: #FFFFFF;
+	margin: 30px;
+}
+
+.logo {
+	width: 194px;
+	height: 204px;
+	margin:0 auto;
+	display: block;
+}
+.main-title {
+	font-style: italic;
+	color: #FF7575;
+	text-align: center;
+	font-size: 71px;
+	font-family: 'Recursive', sans-serif;
+}
+
+.heading-2{
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 29px;
+	margin-bottom: 80px;
+	font-family: 'Poppins', sans-serif;
+}
+
+/* horizontal row */
+.navcontainer { 
+	display: flex;
+	align-items: center;       
+	/*list-style-type: none; */   
+	padding: 0;
+	margin: 0;
+	gap: 30px; 
+	text-align: center;
+	list-style-type: none;
+	margin-left: 250px;                
+}
+
+
+
+.navicon img { /*all img tags with tag nav-icon*/
+	width: 40px;
+	height: 40px;
+	/*object-fit: contain;*/
+	display: block;
+	text-align: center; 
+}
+
+/* 3. Basic styling for your links */
+.navcontainer a {
+	text-decoration: none;     /*Removes harshh underlines */
+	color: #909090;
+	font-family: sans-serif; /*change this font!!*/
+	font-size: 27px;
+	text-align: center; 
+	font-style: italic;
+	margin-left: 40px;
+}
+
+/* 4. Hover effect for links 
+.navcontainer a:hover {
+  color: #007bff; 
+  }*/
+
+
+.gallery-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr; /*3 columns. you can also write repeat(3, 1fr)*/
+	gap: 16px;
+	max-width: 1000px;                      
+	margin: 90px auto;                     
+}
+
+.gallery-item {
+	background-color: #FFFFFF;             /* Blue box color */
+	display: flex;                        /* Helps center the text inside */
+	flex-direction: column;
+	gap: 10px;
+	padding: 20px;
+	justify-content: start;               /* Horizontally centers text */
+	align-items: center;                   /* Vertically centers text */
+	font-size: 24px;
+	font-family: sans-serif;
+	border-radius: 16px;  /*to round edges*/                  
+	}
+	
+.gallery-item h3 {
+	font-family: sans-serif;
+	font-size: 19px;                /* Shrunk down so it fits nicely */
+	margin: 0;
+	color: #0F1217;
+	padding: 5px;
+}
+
+.gallery-item p {
+	font-family: sans-serif;
+	font-size: 16px;                /* Smaller body text */
+	margin: 0;
+	color: #0F1217;
+	padding: 10px;
+}
+.gallery-item img {
+    width: 100%;       
+    height: 150px;      
+    object-fit: cover;
+    border-radius: 4px; 
+}
+
+.pagination-thingy {
+	text-align: center;
+	margin: 40px 0;
+}
+
+.page-arrow,.page-number {
+	font-family: sans-serif; /*change this font!!*/
+	font-size: 30px;
+	font-style: italic;
+	margin: 0 12px; /*why???*/
+	color: #909090;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block
+}
+
+.page-number-active {
+	color: #FF7575;
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+	text-decoration: none;
+	font-style: italic;
+	margin: 0 12px;
+}
+
+.credit {
+	font-family: sans-serif;
+	font-size: 30px;                /* Smaller body text */
+	margin: 0;
+	color: #FFFFFF;
+	margin-left: 40px;
+	margin-top: -10px;
+}
+.credits-name {
+	font-family: sans-serif;
+	font-size: 19px;                /* Smaller body text */
+	margin: 0;
+	color: #FFFFFF;
+	background-color: #4699E0;
+	border-radius: 10px;
+	padding: 6px 12px;
+	margin-top: -10px;
+	gap: 8px;
+	align-items: center;
+	display: inline-block;     
+	width: max-content;
+}
+
+.username{
+	background-color: #4699E0;
+	color: white;
+	display: inline-flex;/*so twittor icon and text can be aligned horizontally w/o text break*/
+	align-items: center;
+	gap: 8px; /*a gap between twitter icon and text*/
+	padding: 6px 12px;
+	border-radius: 20px;
+	margin-left:auto;
+	margin-top: -20px;
+}
+.handle {
+	font-family: sans-serif;
+	font-size: 19px;                /* Smaller body text */
+	margin: 10px;
+	color: #FFFFFF;
+}
+
+.img-small img {
+	width: 40px;
+	height: 40px;
+	display: block;
+}
+
+footer {
+	display: flex;
+	gap: 15px;
+}
+
+.footer-divider {
+	background-color: #333;
+	border: none;
+	height: 2px;
+	margin: 50px;
+}
+
